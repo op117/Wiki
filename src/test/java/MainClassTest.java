@@ -6,6 +6,6 @@ public class MainClassTest {
     public void firstTest(){
         MainClass mainClass = new MainClass();
         int exceptedValue = mainClass.getLocalNumber();
-        Assert.assertEquals("the returned value is not 14 ! ", 14, exceptedValue);
+        Assert.assertEquals("the returned value is not 14 ! ", 15, exceptedValue);
     }
 }
