@@ -8,4 +8,10 @@ public class MainClassTest {
         int exceptedValue = mainClass.getLocalNumber();
         Assert.assertEquals("the returned value is not 14 ! ", 14, exceptedValue);
     }
+
+    @Test
+    public void testGetClassNumber(){
+        MainClass mainClass = new MainClass();
+        Assert.assertTrue("the returned value is not more than  45!" , mainClass.getClassNumber() > 45);
+    }
 }
