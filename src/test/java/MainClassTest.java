@@ -12,6 +12,15 @@ public class MainClassTest {
     @Test
     public void testGetClassNumber(){
         MainClass mainClass = new MainClass();
-        Assert.assertTrue("the returned value is not more than  45!" , mainClass.getClassNumber() > 45);
+        Assert.assertTrue("the returned value is not more than  45!" ,
+                            mainClass.getClassNumber() > 45);
+    }
+
+    @Test
+    public void testGetClassString(){
+        MainClass mainClass = new MainClass();
+        String classString = mainClass.getClassString();
+        Assert.assertTrue("the string doesn't contain 'hello' or 'Hello'",
+                                    classString.contains("hello") || classString.contains("Hello"));
     }
 }
